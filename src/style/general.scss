@@ -1,0 +1,33 @@
+$iransansx-fonts: (
+  Black: 900,
+  ExtraBold: 800,
+  Bold: 700,
+  DemiBold: 600,
+  Medium: 500,
+  Regular: 400,
+  Light: 300,
+  UltraLight: 200,
+  Thin: 100,
+);
+
+@mixin iransansx-font-face($weight-name, $weight-value) {
+  @font-face {
+    font-family: "IRANSansX";
+    src: url("../assets/fonts/IRANSansX#{$weight-name}.ttf") format("truetype");
+    font-weight: $weight-value;
+    font-style: normal;
+  }
+}
+
+@each $name, $weight in $iransansx-fonts {
+  @include iransansx-font-face($name, $weight);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IRANSansX", sans-serif;
+  font-weight: 400;
+}

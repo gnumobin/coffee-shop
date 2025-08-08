@@ -1,5 +1,12 @@
+import Categories from "./components/Categories/Categories";
+import "./style/general.scss";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Categories />
+    </>
+  );
 }
 
 export default App;
