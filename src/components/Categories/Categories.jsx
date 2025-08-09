@@ -11,26 +11,31 @@ const Categories = () => {
     {
       title: "شیرینی",
       img: sweetsImg,
+      alt: "picture of sweets",
       id: 1,
     },
     {
       title: "انواع قهوه",
       img: coffeeBeansImg,
+      alt: "picture of coffeeBeans",
       id: 2,
     },
     {
       title: "بیرون بر",
       img: takeAwayImg,
+      alt: "picture of Take Away item",
       id: 3,
     },
     {
       title: "اسپرسو",
       img: espressoImg,
+      alt: "picture of espresso",
       id: 4,
     },
     {
       title: "تجهیزات",
       img: equipmentImg,
+      alt: "picture of equipment",
       id: 5,
     },
   ];
@@ -45,6 +50,7 @@ const Categories = () => {
             key={category.id}
             title={category.title}
             img={category.img}
+            alt={category.alt}
           />
         ))}
       </div>

@@ -1,9 +1,9 @@
-const Category = ({ title, img }) => {
+const Category = ({ title, img, alt }) => {
   return (
     <figure className="flex flex-col justify-center items-center text-secondary rounded-2xl px-20 py-16 text-2xl gradient-subtle select-none">
       <img
         src={img}
-        alt="image"
+        alt={alt}
         draggable="false"
         width={107}
         height={107}
