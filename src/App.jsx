@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import Categories from "./components/Categories/Categories";
 import Products from "./components/Products/Products";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -7,7 +8,8 @@ function App() {
     <>
       {/* <Categories /> */}
       {/* <Products /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <Button primary={true}>سفارش</Button>
     </>
   );
 }
