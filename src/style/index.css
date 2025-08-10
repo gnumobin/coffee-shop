@@ -3,12 +3,14 @@
 @theme {
   --color-primary: #25181a;
   --color-primary-tint-1: #392624;
+  --color-primary-tint-2: #7d5647;
   --color-primary-shade-1: #26181a;
   --color-title: #603809;
   --color-secondary: #f8e4be;
   --color-secondary-tint-1: rgba(247, 225, 188, 0.3);
   --color-bright: #fff9f1;
   --color-bright-shade-1: #fff2da;
+  --color-bright-shade-2: #dabb9e;
   --color-dark: #1e1e1e;
   --color-yellow: #ffcc32;
   --color-yellow-shade-1: #f9c06a;
@@ -29,6 +31,10 @@
 
 @utility gradient-subtle {
   background: linear-gradient(180deg, #775142 0%, #54372b 40%, #25181a 100%);
+}
+
+@utility gradient-brown {
+  background: linear-gradient(105deg, #25181a 1%, #7d5647 20%, #25181a 79%);
 }
 
 @utility heading-secondary {
