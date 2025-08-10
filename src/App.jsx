@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Categories from "./components/Categories/Categories";
+import CopyRight from "./components/CopyRight";
 import EmailBox from "./components/Email/EmailBox";
 import Popular from "./components/Products/Popular";
 import Products from "./components/Products/Products";
@@ -14,7 +15,8 @@ function App() {
       <Cta />
       <Popular />
       <Testimonials /> */}
-      <EmailBox />
+      {/* <EmailBox /> */}
+      <CopyRight />
     </div>
   );
 }
