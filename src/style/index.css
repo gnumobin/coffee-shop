@@ -8,6 +8,7 @@
   --color-title: #603809;
   --color-secondary: #f8e4be;
   --color-secondary-tint-1: rgba(247, 225, 188, 0.3);
+  --color-secondary-tint-2: #ffe5be;
   --color-bright: #fff9f1;
   --color-bright-shade-1: #fff2da;
   --color-bright-shade-2: #dabb9e;
@@ -21,6 +22,8 @@
   --text-4xl: 2rem;
   /* Rounded */
   --rounded-2xl: 1.4rem;
+  /* Gap */
+  --gap-section: 9.4rem;
 }
 
 @utility container {
@@ -46,6 +49,6 @@
 @utility pos-center {
   position: absolute;
   left: 50%;
-  bottom: -6%;
-  transform: translateX(-50%);
+  bottom: -50%;
+  transform: translate(-50%, -50%);
 }

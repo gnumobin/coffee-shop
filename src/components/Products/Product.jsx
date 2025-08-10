@@ -12,7 +12,7 @@ const Product = ({ title, img, alt, recipe, price }) => {
         loading="lazy"
         decoding="async"
       />
-      <figcaption className="pt-6 flex flex-col gap-3 pb-20">
+      <figcaption className="pt-6 flex flex-col gap-3 pb-10 relative">
         <h3 className="text-4xl text-primary-tint-1 font-bold">{title}</h3>
         <p className="text-xl text-dark flex gap-1 justify-center">
           <span>قهوه</span>

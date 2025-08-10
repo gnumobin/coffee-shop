@@ -1,17 +1,19 @@
 import Button from "./components/Button";
 import Categories from "./components/Categories/Categories";
-import Cta from "./components/Cta";
+import Popular from "./components/Products/Popular";
 import Products from "./components/Products/Products";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Cta from "./sections/Cta";
 
 function App() {
   return (
-    <>
-      {/* <Categories /> */}
-      {/* <Products /> */}
-      {/* <Testimonials /> */}
+    <div className="flex flex-col gap-section">
+      <Categories />
+      <Products />
       <Cta />
-    </>
+      <Popular />
+      <Testimonials />
+    </div>
   );
 }
 
