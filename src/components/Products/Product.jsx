@@ -1,6 +1,8 @@
+import Button from "../Button";
+
 const Product = ({ title, img, alt, recipe, price }) => {
   return (
-    <figure className="bg-bright text-center rounded-2xl rounded-t-3xl border border-yellow-shade-1">
+    <figure className="bg-bright text-center rounded-2xl rounded-t-3xl border border-yellow-shade-1 relative">
       <img
         src={img}
         alt={alt}
@@ -10,7 +12,7 @@ const Product = ({ title, img, alt, recipe, price }) => {
         loading="lazy"
         decoding="async"
       />
-      <figcaption className="pt-6 flex flex-col gap-3 pb-16">
+      <figcaption className="pt-6 flex flex-col gap-3 pb-20">
         <h3 className="text-4xl text-primary-tint-1 font-bold">{title}</h3>
         <p className="text-xl text-dark flex gap-1 justify-center">
           <span>قهوه</span>
@@ -24,6 +26,7 @@ const Product = ({ title, img, alt, recipe, price }) => {
         <p className="text-2xl font-bold text-primary-tint-1">
           <i>{price.toLocaleString()}</i> تومان
         </p>
+        <Button className="pos-center">سفارش</Button>
       </figcaption>
     </figure>
   );

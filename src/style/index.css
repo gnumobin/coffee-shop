@@ -36,3 +36,10 @@
   font-size: 2.4rem;
   font-weight: bold;
 }
+
+@utility pos-center {
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  transform: translateX(-50%);
+}

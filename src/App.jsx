@@ -7,9 +7,8 @@ function App() {
   return (
     <>
       {/* <Categories /> */}
-      {/* <Products /> */}
+      <Products />
       {/* <Testimonials /> */}
-      <Button primary={true}>سفارش</Button>
     </>
   );
 }
