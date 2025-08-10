@@ -3,15 +3,19 @@
 @theme {
   --color-primary: #25181a;
   --color-primary-tint-1: #392624;
+  --color-primary-shade-1: #26181a;
   --color-title: #603809;
   --color-secondary: #f8e4be;
   --color-bright: #fff9f1;
+  --color-bright-shade-1: #fff2da;
   --color-dark: #1e1e1e;
-  --color-yellow: #f9c06a;
+  --color-yellow: #ffcc32;
+  --color-yellow-shade-1: #f9c06a;
   /* Text */
-  --text-2xl: 1.4rem;
+  --text-xl: 1.4rem;
   --text-2xl: 1.6rem;
-  --text-3xl: 2rem;
+  --text-3xl: 1.8rem;
+  --text-4xl: 2rem;
   /* Rounded */
   --rounded-2xl: 1.4rem;
 }
