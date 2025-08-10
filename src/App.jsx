@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import Categories from "./components/Categories/Categories";
 import CopyRight from "./components/CopyRight";
 import EmailBox from "./components/Email/EmailBox";
+import FeaturedIn from "./sections/FeaturedIn";
 import Popular from "./components/Products/Popular";
 import Products from "./components/Products/Products";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -16,7 +17,8 @@ function App() {
       <Popular />
       <Testimonials /> */}
       {/* <EmailBox /> */}
-      <CopyRight />
+      {/* <CopyRight /> */}
+      <FeaturedIn />
     </div>
   );
 }
