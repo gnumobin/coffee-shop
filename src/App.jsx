@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Cta from "./sections/Cta";
 import Logo from "./components/Logo";
 import NavList from "./components/NavList";
+import Footer from "./components/Layouts/Footer";
 
 function App() {
   return (
@@ -18,11 +19,7 @@ function App() {
       <Cta />
       <Popular />
       <Testimonials /> */}
-      {/* <EmailBox /> */}
-      {/* <CopyRight /> */}
-      {/* <FeaturedIn /> */}
-      {/* <Logo /> */}
-      {/* <NavList /> */}
+      <Footer />
     </div>
   );
 }

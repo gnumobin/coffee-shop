@@ -1,7 +1,16 @@
-import { FaFacebookF, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaGithub,
+  FaLinkedin,
+  FaMobile,
+  FaTelegram,
+} from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
-const Icon = ({ icon, link }) => {
-  const generalStyle = "w-11 h-11 cursor-pointer";
+const Icon = ({ icon, link, className }) => {
+  const conditionStyle = `${className && className}`;
+  const generalStyle = `w-11 h-11 ${conditionStyle} `;
 
   switch (icon) {
     case "github":
@@ -35,6 +44,30 @@ const Icon = ({ icon, link }) => {
         </a>
       ) : (
         <FaFacebookF className={generalStyle} />
+      );
+    case "email":
+      return link ? (
+        <a href={link}>
+          <FaEnvelope className={generalStyle} />
+        </a>
+      ) : (
+        <FaEnvelope className={generalStyle} />
+      );
+    case "mobile":
+      return link ? (
+        <a href={link}>
+          <FaMobile className={generalStyle} />
+        </a>
+      ) : (
+        <FaMobile className={generalStyle} />
+      );
+    case "location":
+      return link ? (
+        <a href={link}>
+          <FaLocationDot className={generalStyle} />
+        </a>
+      ) : (
+        <FaLocationDot className={generalStyle} />
       );
 
     default:

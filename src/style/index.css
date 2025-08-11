@@ -48,6 +48,15 @@
   font-weight: bold;
 }
 
+@utility bg-footer {
+  background-image: linear-gradient(
+      rgba(37, 24, 26, 0.8),
+      rgba(37, 24, 26, 0.8)
+    ),
+    url("../assets/img/layouts/footer.png");
+  /* background-blend-mode: multiply; */
+}
+
 @utility pos-center {
   position: absolute;
   left: 50%;
