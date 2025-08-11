@@ -7,6 +7,8 @@ import Popular from "./components/Products/Popular";
 import Products from "./components/Products/Products";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Cta from "./sections/Cta";
+import Logo from "./components/Logo";
+import NavList from "./components/NavList";
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
       <Testimonials /> */}
       {/* <EmailBox /> */}
       {/* <CopyRight /> */}
-      <FeaturedIn />
+      {/* <FeaturedIn /> */}
+      {/* <Logo /> */}
+      {/* <NavList /> */}
     </div>
   );
 }
