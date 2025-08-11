@@ -41,6 +41,22 @@
 @utility gradient-brown {
   background: linear-gradient(105deg, #25181a 1%, #7d5647 20%, #25181a 79%);
 }
+@utility gradient-brown-tint {
+  background: linear-gradient(
+    105deg,
+    #745f58 1%,
+    #3f2f2a 25%,
+    #25181a 45%,
+    #7c573c 100%
+  );
+}
+
+@utility heading-primary {
+  font-size: 4rem;
+  font-weight: bold;
+
+  /* text-shadow: 0 0 0.5rem white; */
+}
 
 @utility heading-secondary {
   color: var(--color-title);
@@ -62,4 +78,10 @@
   left: 50%;
   bottom: -50%;
   transform: translate(-50%, -50%);
+}
+
+@utility bg-test {
+  background-image: url(../assets/img/hero/heroBg.png);
+  background-size: cover;
+  /* background-position: center; */
 }

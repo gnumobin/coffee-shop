@@ -10,15 +10,17 @@ import Cta from "./sections/Cta";
 import Logo from "./components/Logo";
 import NavList from "./components/NavList";
 import Footer from "./components/Layouts/Footer";
+import Hero from "./sections/Hero";
 
 function App() {
   return (
     <div className="flex flex-col gap-section">
-      {/* <Categories />
+      <Hero />
+      <Categories />
       <Products />
       <Cta />
       <Popular />
-      <Testimonials /> */}
+      <Testimonials />
       <Footer />
     </div>
   );

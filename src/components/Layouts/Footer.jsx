@@ -10,7 +10,7 @@ import Icon from "../Icons/Icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer text-xl text-bright-shade-2">
+    <footer className="bg-footer text-xl text-bright-shade-2 pt-32">
       <div className="container">
         <div className="flex justify-between items-center">
           <div>
