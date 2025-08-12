@@ -1,12 +1,12 @@
-import Product from "./Product";
 // Images
-import latteImg from "../../assets/img/products/latte.jpg";
-import macchiatoImg from "../../assets/img/products/macchiato.jpg";
-import espressoImg from "../../assets/img/products/espresso.jpg";
-import cappuccinoImg from "../../assets/img/products/cappuccino.jpg";
+import latteImg from "../../../assets/img/products/latte.jpg";
+import macchiatoImg from "../../../assets/img/products/macchiato.jpg";
+import espressoImg from "../../../assets/img/products/espresso.jpg";
+import cappuccinoImg from "../../../assets/img/products/cappuccino.jpg";
 // data
-import data from "../../data/Products/populars.json";
-
+import data from "../../../data/products/bestSellers.json";
+import ProductCard from "./ProductCard";
+// images
 const images = {
   latte: latteImg,
   macchiato: macchiatoImg,
@@ -14,15 +14,14 @@ const images = {
   cappuccino: cappuccinoImg,
 };
 
-const Popular = () => {
+const BestSellerProductList = () => {
   return (
-    <section className="relative">
-      <div className="pos-center h-1/2 bg-secondary-tint-2 w-full">&nbsp;</div>
+    <section>
       <div className="container">
-        <h2 className="heading-secondary">محبوب ترین‌ها</h2>
+        <h2 className="heading-secondary">پرفروش ترین‌ها</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(28rem,1fr))] gap-8 rounded mt-16 gap-y-36">
           {data.map((product) => (
-            <Product
+            <ProductCard
               key={product.id}
               title={product.title}
               img={images[product.img]}
@@ -37,4 +36,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default BestSellerProductList;

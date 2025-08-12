@@ -1,8 +1,7 @@
-import Icon from "../Icons/Icon";
-import Logo from "../Logo";
-
-import primaryNav from "../../data/Header/primaryNav.json";
-import actionsIcons from "../../data/Header/actionsIcons.json";
+import primaryNav from "../data/header/primaryNav.json";
+import actionsIcons from "../data/header/actionsIcons.json";
+import Icon from "../components/ui/icons/Icon";
+import Logo from "../components/ui/Logo";
 
 const Header = () => {
   return (

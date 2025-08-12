@@ -1,8 +1,8 @@
 import Icon from "./Icon";
 // data
-import data from "../../data/Etc/socialsIcons.json";
+import data from "../../../data/etc/socialsIcons.json";
 
-const SocialsIcon = () => {
+const IconList = () => {
   return (
     <address className="flex gap-11">
       {data.map((icon, i) => (
@@ -12,4 +12,4 @@ const SocialsIcon = () => {
   );
 };
 
-export default SocialsIcon;
+export default IconList;

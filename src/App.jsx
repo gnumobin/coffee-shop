@@ -1,17 +1,12 @@
-import Button from "./components/Button";
-import Categories from "./components/Categories/Categories";
-import CopyRight from "./components/CopyRight";
-import EmailBox from "./components/Email/EmailBox";
-import FeaturedIn from "./sections/FeaturedIn";
-import Popular from "./components/Products/Popular";
-import Products from "./components/Products/Products";
-import Testimonials from "./components/Testimonials/Testimonials";
+// import BestSellerProductList from "./components/layout-parts/products/BestSellerProductList";
+import CategoryList from "./components/features/categories/CategoryList";
+import PopularProductList from "./components/features/products/PopularProductList";
+import TestimonialList from "./components/features/testimonials/TestimonialList";
+import BestSellerProductList from "./components/features/products/BestSellerProductList";
+import Footer from "./layouts/Footer";
+import Header from "./layouts/Header";
 import Cta from "./sections/Cta";
-import Logo from "./components/Logo";
-import NavList from "./components/NavList";
-import Footer from "./components/Layouts/Footer";
 import Hero from "./sections/Hero";
-import Header from "./components/Layouts/Header";
 
 function App() {
   return (
@@ -20,11 +15,11 @@ function App() {
         <Header />
         <Hero />
       </div>
-      <Categories />
-      <Products />
+      <CategoryList />
+      <BestSellerProductList />
       <Cta />
-      <Popular />
-      <Testimonials />
+      <PopularProductList />
+      <TestimonialList />
       <Footer />
     </div>
   );

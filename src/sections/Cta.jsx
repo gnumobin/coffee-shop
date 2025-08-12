@@ -1,5 +1,5 @@
-import Button from "../components/Button";
 import Picture from "../assets/img/etc/cupThrown.png";
+import Button from "../components/ui/buttons/Button";
 
 const Cta = () => {
   return (

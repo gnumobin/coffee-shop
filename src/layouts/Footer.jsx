@@ -1,12 +1,12 @@
-import FeaturedIn from "../../sections/FeaturedIn";
-import CopyRight from "../CopyRight";
-import EmailBox from "../Email/EmailBox";
-import NavList from "../NavList";
+import FeaturedIn from "../sections/FeaturedIn";
 // data
-import contactListJson from "../../data/Footer/contactList.json";
-import contactAccessibilityJson from "../../data/Footer/accessibilityList.json";
-import Logo from "../Logo";
-import Icon from "../Icons/Icon";
+import contactListJson from "../data/footer/contactList.json";
+import contactAccessibilityJson from "../data/footer/accessibilityList.json";
+import CopyRight from "../components/layout-parts/CopyRight";
+import NavList from "../components/navigation/NavList";
+import Logo from "../components/ui/Logo";
+import Icon from "../components/ui/icons/Icon";
+import EmailBox from "../components/form/email/EmailBox";
 
 const Footer = () => {
   return (

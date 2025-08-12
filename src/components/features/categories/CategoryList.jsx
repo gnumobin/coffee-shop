@@ -1,12 +1,12 @@
-import Category from "./Category";
 // Images
-import sweetsImg from "../../assets/img/categories/sweets.svg";
-import equipmentImg from "../../assets/img/categories/equipment.svg";
-import coffeeBeansImg from "../../assets/img/categories/coffeeBeans.svg";
-import espressoImg from "../../assets/img/categories/espresso.svg";
-import takeAwayImg from "../../assets/img/categories/takeAway.svg";
+import sweetsImg from "../../../assets/img/categories/sweets.svg";
+import equipmentImg from "../../../assets/img/categories/equipment.svg";
+import coffeeBeansImg from "../../../assets/img/categories/coffeeBeans.svg";
+import espressoImg from "../../../assets/img/categories/espresso.svg";
+import takeAwayImg from "../../../assets/img/categories/takeAway.svg";
 // data
-import data from "../../data/Categories/categories.json";
+import data from "../../../data/categories/categories.json";
+import CategoryCard from "./CategoryCard";
 
 const images = {
   sweets: sweetsImg,
@@ -16,14 +16,14 @@ const images = {
   takeAway: takeAwayImg,
 };
 
-const Categories = () => {
+const CategoryList = () => {
   return (
     <section className="container">
       <h2 className="heading-secondary">دسته بندی محصولات</h2>
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] gap-8 rounded mt-16">
         {data.map((category) => (
-          <Category
+          <CategoryCard
             key={category.id}
             title={category.title}
             img={images[category.img]}
@@ -35,4 +35,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default CategoryList;

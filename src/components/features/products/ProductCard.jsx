@@ -1,6 +1,6 @@
-import Button from "../Button";
+import Button from "../../ui/buttons/Button";
 
-const Product = ({ title, img, alt, recipe, price }) => {
+const ProductCard = ({ title, img, alt, recipe, price }) => {
   return (
     <figure className="bg-bright text-center rounded-2xl rounded-t-3xl border border-yellow-shade-1 relative">
       <img
@@ -32,4 +32,4 @@ const Product = ({ title, img, alt, recipe, price }) => {
   );
 };
 
-export default Product;
+export default ProductCard;

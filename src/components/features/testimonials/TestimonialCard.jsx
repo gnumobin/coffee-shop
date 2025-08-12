@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 
-const Testimonial = ({ author, rate, quote, active }) => {
+const TestimonialCard = ({ author, rate, quote, active }) => {
   const starsCount = Array.from({ length: rate });
 
   const figureStyle = "rounded-2xl border border-primary-shade-1 p-10";
@@ -25,4 +25,4 @@ const Testimonial = ({ author, rate, quote, active }) => {
   );
 };
 
-export default Testimonial;
+export default TestimonialCard;

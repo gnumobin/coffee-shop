@@ -1,4 +1,4 @@
-const Category = ({ title, img, alt }) => {
+const CategoryCard = ({ title, img, alt }) => {
   return (
     <figure className="flex flex-col justify-center items-center text-secondary rounded-2xl px-20 py-16 text-2xl gradient-subtle select-none">
       <img
@@ -15,4 +15,4 @@ const Category = ({ title, img, alt }) => {
   );
 };
 
-export default Category;
+export default CategoryCard;

@@ -1,11 +1,11 @@
-import FeaturedInItem from "../components/FeaturedInItem";
 // Images
 import mainImg from "../assets/img/featuredIn/coffeeBag.png";
 import enamadImg from "../assets/img/featuredIn/enamad.png";
 import samandehiImg from "../assets/img/featuredIn/samandehi.png";
 import etehadieImg from "../assets/img/featuredIn/etehadie.png";
 // data
-import data from "../data/Licenses/featuredIn.json";
+import data from "../data/licenses/featuredIn.json";
+import FeaturedInItem from "../components/features/FeaturedInItem";
 // images
 const images = {
   enamad: enamadImg,
