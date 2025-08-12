@@ -11,11 +11,15 @@ import Logo from "./components/Logo";
 import NavList from "./components/NavList";
 import Footer from "./components/Layouts/Footer";
 import Hero from "./sections/Hero";
+import Header from "./components/Layouts/Header";
 
 function App() {
   return (
     <div className="flex flex-col gap-section">
-      <Hero />
+      <div className="gradient-brown">
+        <Header />
+        <Hero />
+      </div>
       <Categories />
       <Products />
       <Cta />

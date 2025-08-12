@@ -4,9 +4,11 @@ import {
   FaGithub,
   FaLinkedin,
   FaMobile,
+  FaSearch,
   FaTelegram,
+  FaUser,
 } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaBasketShopping, FaLocationDot } from "react-icons/fa6";
 
 const Icon = ({ icon, link, className }) => {
   const conditionStyle = `${className && className}`;
@@ -68,6 +70,30 @@ const Icon = ({ icon, link, className }) => {
         </a>
       ) : (
         <FaLocationDot className={generalStyle} />
+      );
+    case "search":
+      return link ? (
+        <a href={link}>
+          <FaSearch className={generalStyle} />
+        </a>
+      ) : (
+        <FaSearch className={generalStyle} />
+      );
+    case "user":
+      return link ? (
+        <a href={link}>
+          <FaUser className={generalStyle} />
+        </a>
+      ) : (
+        <FaUser className={generalStyle} />
+      );
+    case "basket":
+      return link ? (
+        <a href={link}>
+          <FaBasketShopping className={generalStyle} />
+        </a>
+      ) : (
+        <FaBasketShopping className={generalStyle} />
       );
 
     default:

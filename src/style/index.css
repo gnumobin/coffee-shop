@@ -71,6 +71,8 @@
     ),
     url("../assets/img/layouts/footer.png");
   /* background-blend-mode: multiply; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @utility pos-center {
@@ -80,8 +82,8 @@
   transform: translate(-50%, -50%);
 }
 
-@utility bg-test {
+@utility bg-coffees {
   background-image: url(../assets/img/hero/heroBg.png);
-  background-size: cover;
-  /* background-position: center; */
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

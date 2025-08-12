@@ -3,9 +3,9 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="gradient-brown-tint text-4xl text-bright-shade-2">
-      <div className="container flex items-center gap-28">
-        <div className="w-1/2 flex flex-col gap-16  ">
+    <section className="text-4xl text-bright-shade-2">
+      <div className="container flex pb-60">
+        <div className="w-1/2 flex flex-col justify-center gap-16 bg-coffees mt-10">
           <h1 className="heading-primary">خرید آنلاین انواع قهوه</h1>
           <h2>
             فروشگاه اینترنتی قهوه، خرید انواع پودر و دان قهوه با قیمت مناسب
@@ -14,15 +14,15 @@ const Hero = () => {
             خرید و مشاوره
           </Button>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 flex justify-end">
           <img
             src={CupImg}
             alt="cup"
             loading="eager"
-            width={650}
+            width={555}
             height={646}
             decoding="async"
-            className="w-full"
+            className="w-[65%]"
             draggable="false"
           />
         </div>

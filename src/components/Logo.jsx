@@ -8,7 +8,7 @@ const Logo = () => {
         decoding="async"
         width={74}
         height={95}
-        className="w-full"
+        className="w-32 h-24"
         draggable="false"
       />
     </div>
