@@ -1,28 +1,19 @@
 import FeaturedInItem from "../components/FeaturedInItem";
 // Images
+import mainImg from "../assets/img/featuredIn/coffeeBag.png";
 import enamadImg from "../assets/img/featuredIn/enamad.png";
 import samandehiImg from "../assets/img/featuredIn/samandehi.png";
 import etehadieImg from "../assets/img/featuredIn/etehadie.png";
-import mainImg from "../assets/img/featuredIn/coffeeBag.png";
+// data
+import data from "../data/Licenses/featuredIn.json";
+// images
+const images = {
+  enamad: enamadImg,
+  samandehi: samandehiImg,
+  etehadie: etehadieImg,
+};
 
 const FeaturedIn = () => {
-  const data = [
-    {
-      img: enamadImg,
-      alt: "Enamad",
-      id: 1,
-    },
-    {
-      img: samandehiImg,
-      alt: "Samandehi",
-      id: 2,
-    },
-    {
-      img: etehadieImg,
-      alt: "Etehadie",
-      id: 3,
-    },
-  ];
   return (
     <aside className="flex flex-col items-center">
       <img
@@ -38,7 +29,7 @@ const FeaturedIn = () => {
         {data.map((featured) => (
           <FeaturedInItem
             key={featured.id}
-            img={featured.img}
+            img={images[featured.img]}
             alt={featured.alt}
           />
         ))}

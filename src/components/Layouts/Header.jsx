@@ -1,6 +1,9 @@
 import Icon from "../Icons/Icon";
 import Logo from "../Logo";
 
+import primaryNav from "../../data/Header/primaryNav.json";
+import actionsIcons from "../../data/Header/actionsIcons.json";
+
 const Header = () => {
   return (
     <header className="text-2xl text-bright-shade-2">
@@ -8,40 +11,18 @@ const Header = () => {
         <Logo />
         <nav className="mr-20">
           <ul className="flex gap-16">
-            <li>
-              <a href="#">فروشگاه</a>
-            </li>
-            <li>
-              <a href="#">فروشگاه</a>
-            </li>
-            <li>
-              <a href="#">فروشگاه</a>
-            </li>
-            <li>
-              <a href="#">فروشگاه</a>
-            </li>
-            <li>
-              <a href="#">فروشگاه</a>
-            </li>
+            {primaryNav.map((item, i) => (
+              <li key={i}>
+                <a href={item.link}>{item.title}</a>
+              </li>
+            ))}
           </ul>
         </nav>
         <nav className="mr-auto">
           <ul className="flex gap-20">
-            <li>
-              <a href="#">
-                <Icon icon="user" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <Icon icon="basket" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <Icon icon="search" />
-              </a>
-            </li>
+            {actionsIcons.map((icon, i) => (
+              <Icon icon={icon.icon} key={i} />
+            ))}
           </ul>
         </nav>
       </div>

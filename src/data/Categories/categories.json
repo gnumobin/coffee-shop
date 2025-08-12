@@ -1,0 +1,32 @@
+[
+  {
+    "title": "شیرینی",
+    "img": "sweets",
+    "alt": "picture of sweets",
+    "id": 1
+  },
+  {
+    "title": "انواع قهوه",
+    "img": "coffeeBeans",
+    "alt": "picture of coffeeBeans",
+    "id": 2
+  },
+  {
+    "title": "بیرون بر",
+    "img": "takeAway",
+    "alt": "picture of Take Away item",
+    "id": 3
+  },
+  {
+    "title": "اسپرسو",
+    "img": "espresso",
+    "alt": "picture of espresso",
+    "id": 4
+  },
+  {
+    "title": "تجهیزات",
+    "img": "equipment",
+    "alt": "picture of equipment",
+    "id": 5
+  }
+]
