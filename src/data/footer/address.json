@@ -1,0 +1,25 @@
+[
+  {
+    "type": "text",
+    "value": "شنبه تا پنج شنبه: 10 صبح تا 17 بعد از ظهر"
+  },
+  {
+    "type": "text",
+    "value": "جمعه : 10 صبح تا 14 بعد از ظهر"
+  },
+  {
+    "type": "icon",
+    "icon": "location",
+    "text": "مشهد، خیابان مطهری، مطهری 36، پلاک 18"
+  },
+  {
+    "type": "icon",
+    "icon": "email",
+    "text": "cafena@coffee.com"
+  },
+  {
+    "type": "icon",
+    "icon": "mobile",
+    "text": "02192024359"
+  }
+]

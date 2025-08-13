@@ -1,12 +1,12 @@
 import FeaturedIn from "../sections/FeaturedIn";
+import CopyRight from "../components/layout-parts/CopyRight";
+import NavList from "../components/navigation/GenericList";
+import Logo from "../components/ui/Logo";
+import EmailBox from "../components/form/email/EmailBox";
 // data
 import contactListJson from "../data/footer/contactList.json";
 import contactAccessibilityJson from "../data/footer/accessibilityList.json";
-import CopyRight from "../components/layout-parts/CopyRight";
-import NavList from "../components/navigation/NavList";
-import Logo from "../components/ui/Logo";
-import Icon from "../components/ui/icons/Icon";
-import EmailBox from "../components/form/email/EmailBox";
+import addressJson from "../data/footer/address.json";
 
 const Footer = () => {
   return (
@@ -16,22 +16,7 @@ const Footer = () => {
           <div>
             <Logo />
             <div className="flex gap-20">
-              <ul className="flex flex-col gap-7 pt-12">
-                <li>شنبه تا پنج شنبه: 10 صبح تا 17 بعد از ظهر</li>
-                <li>جمعه : 10 صبح تا 14 بعد از ظهر</li>
-                <li className="flex items-center gap-4">
-                  <Icon icon="location" className={"!h-10 !w-10"} />
-                  <span>مشهد، خیابان مطهری، مطهری 36، پلاک 18</span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <Icon icon="email" className={"!h-10 !w-10"} />
-                  <span>cafena@coffee.com</span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <Icon icon="mobile" className={"!h-10 !w-10"} />
-                  <span>02192024359</span>
-                </li>
-              </ul>
+              <NavList data={addressJson} />
               <NavList title="دسترسی سریع" data={contactAccessibilityJson} />
               <NavList title="ارتباط با ما" data={contactListJson} />
             </div>
