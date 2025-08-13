@@ -7,6 +7,7 @@ import takeAwayImg from "../../../assets/img/categories/takeAway.svg";
 // data
 import data from "../../../data/categories/categories.json";
 import CategoryCard from "./CategoryCard";
+import GridWrapper from "../../ui/GridWrapper";
 
 const images = {
   sweets: sweetsImg,
@@ -18,20 +19,12 @@ const images = {
 
 const CategoryList = () => {
   return (
-    <section className="container">
-      <h2 className="heading-secondary">دسته بندی محصولات</h2>
-
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] gap-8 rounded mt-16">
-        {data.map((category) => (
-          <CategoryCard
-            key={category.id}
-            title={category.title}
-            img={images[category.img]}
-            alt={category.alt}
-          />
-        ))}
-      </div>
-    </section>
+    <GridWrapper
+      title="دسته بندی محصولات"
+      data={data}
+      images={images}
+      RenderItem={CategoryCard}
+    />
   );
 };
 

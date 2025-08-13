@@ -6,6 +6,7 @@ import cappuccinoImg from "../../../assets/img/products/cappuccino.jpg";
 // data
 import data from "../../../data/products/populars.json";
 import ProductCard from "./ProductCard";
+import GridWrapper from "../../ui/GridWrapper";
 
 const images = {
   latte: latteImg,
@@ -16,24 +17,17 @@ const images = {
 
 const PopularProductList = () => {
   return (
-    <section className="relative">
+    <GridWrapper
+      title="دسته بندی محصولات"
+      data={data}
+      images={images}
+      RenderItem={ProductCard}
+      minSize="28rem"
+      wrapperStyle="relative"
+      additionalStyle={"gap-y-36 mt-16"}
+    >
       <div className="pos-center h-1/2 bg-secondary-tint-2 w-full">&nbsp;</div>
-      <div className="container">
-        <h2 className="heading-secondary">محبوب ترین‌ها</h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(28rem,1fr))] gap-8 rounded mt-16 gap-y-36">
-          {data.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.title}
-              img={images[product.img]}
-              alt={product.alt}
-              recipe={product.recipe}
-              price={product.price}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    </GridWrapper>
   );
 };
 

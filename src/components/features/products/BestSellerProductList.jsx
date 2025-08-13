@@ -6,6 +6,7 @@ import cappuccinoImg from "../../../assets/img/products/cappuccino.jpg";
 // data
 import data from "../../../data/products/bestSellers.json";
 import ProductCard from "./ProductCard";
+import GridWrapper from "../../ui/GridWrapper";
 // images
 const images = {
   latte: latteImg,
@@ -16,23 +17,14 @@ const images = {
 
 const BestSellerProductList = () => {
   return (
-    <section>
-      <div className="container">
-        <h2 className="heading-secondary">پرفروش ترین‌ها</h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(28rem,1fr))] gap-8 rounded mt-16 gap-y-36">
-          {data.map((product) => (
-            <ProductCard
-              key={product.id}
-              title={product.title}
-              img={images[product.img]}
-              alt={product.alt}
-              recipe={product.recipe}
-              price={product.price}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    <GridWrapper
+      title="دسته بندی محصولات"
+      data={data}
+      images={images}
+      RenderItem={ProductCard}
+      minSize="28rem"
+      additionalStyle={"gap-y-36 mt-16"}
+    />
   );
 };
 
