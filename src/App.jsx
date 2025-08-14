@@ -13,8 +13,11 @@ function App() {
     <div className="flex flex-col gap-section">
       {/* <div className="gradient-brown">
         <Header />
+      <Hero />
+        </div> */}
+      <div className="gradient-brown h-screen">
         <Hero />
-      </div> */}
+      </div>
       <CategoryList />
       <BestSellerProductList />
       <Cta />
