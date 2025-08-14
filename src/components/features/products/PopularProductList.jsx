@@ -18,7 +18,7 @@ const images = {
 const PopularProductList = () => {
   return (
     <GridWrapper
-      title="دسته بندی محصولات"
+      title="محبوب ترین ها"
       data={data}
       images={images}
       RenderItem={ProductCard}

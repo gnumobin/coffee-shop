@@ -5,8 +5,8 @@ const CategoryCard = ({ title, img, alt }) => {
                  rounded-2xl gradient-subtle select-none text-secondary
                  px-20 py-16 text-2xl
                  2xl:px-16 2xl:py-12
-                 xl:px-10 xl:py-8 xl:text-xl
-                 lg:px-6 lg:py-6 lg:text-lg"
+                 xl:!px-10 xl:!py-8 xl:text-xl
+                 lg:!px-6 lg:!py-6 lg:text-lg"
     >
       <img
         src={img}

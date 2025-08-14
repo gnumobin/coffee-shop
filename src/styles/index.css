@@ -100,3 +100,9 @@
     minmax(clamp(15rem, 17vw, 24rem), 1fr)
   );
 }
+
+@media screen and (max-width: 57.5em) {
+  :root {
+    --gap-section: 7.4rem;
+  }
+}

@@ -1,12 +1,12 @@
 import FeaturedIn from "../sections/FeaturedIn";
 import CopyRight from "../components/layout-parts/CopyRight";
-import NavList from "../components/navigation/GenericList";
 import Logo from "../components/ui/Logo";
 import EmailBox from "../components/form/email/EmailBox";
 // data
 import contactListJson from "../data/footer/contactList.json";
 import contactAccessibilityJson from "../data/footer/accessibilityList.json";
 import addressJson from "../data/footer/address.json";
+import GenericList from "../components/navigation/GenericList";
 
 const Footer = () => {
   return (
@@ -16,16 +16,19 @@ const Footer = () => {
           <div className="3xl:w-full">
             <Logo />
             <div className="flex gap-5 xl:flex-col xl:gap-4 3xl:justify-between">
-              <NavList data={addressJson} />
-              <NavList title="دسترسی سریع" data={contactAccessibilityJson} />
-              <NavList title="ارتباط با ما" data={contactListJson} />
+              <GenericList data={addressJson} />
+              <GenericList
+                title="دسترسی سریع"
+                data={contactAccessibilityJson}
+              />
+              <GenericList title="ارتباط با ما" data={contactListJson} />
             </div>
           </div>
 
           <FeaturedIn />
         </div>
 
-        <p className="my-12 leading-12 3xl:my-10 2xl:my-8 3xl:leading-10 2xl:leading-9 xl:text-justify">
+        <p className="my-12 leading-12 3xl:my-10 2xl:my-8 3xl:leading-10 2xl:leading-9 xl:text-justify 2xl:px-4">
           کافینا گسترده ترین فروش قهوه و چای تخصصی در سراسر جهان. از دانه‌های
           اسپرسوی طعم‌دار، ما انواعی از محصولات را ارائه می‌دهیم تا کام هر مشتری
           را وسوسه کند. برای کسانی که به دنبال تجهیزات منحصر به فرد دم کردن

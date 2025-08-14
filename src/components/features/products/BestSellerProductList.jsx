@@ -18,7 +18,7 @@ const images = {
 const BestSellerProductList = () => {
   return (
     <GridWrapper
-      title="دسته بندی محصولات"
+      title="پرفروش ترین ها"
       data={data}
       images={images}
       RenderItem={ProductCard}

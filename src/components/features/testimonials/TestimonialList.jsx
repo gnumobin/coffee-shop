@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard";
 const TestimonialList = () => {
   return (
     <GridWrapper
-      title="دسته بندی محصولات"
+      title="نظرات"
       data={data}
       RenderItem={TestimonialCard}
       wrapperStyle={"pt-[var(--gap-section)] xl:pt-0"}

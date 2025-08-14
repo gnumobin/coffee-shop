@@ -12,7 +12,7 @@ const ProductCard = ({ title, img, alt, recipe, price }) => (
       className="w-full rounded-t-3xl 2xl:rounded-t-xl xl:rounded-t-lg"
     />
 
-    <figcaption className="relative flex flex-col gap-6 pb-10 pt-12 3xl:gap-4 3xl:pb-10 3xl:pt-8 2xl:gap-3 2xl:pb-6 2xl:pt-4 xl:gap-1.5 xl:pb-5 xl:pt-3">
+    <figcaption className="relative flex flex-col gap-6 pb-10 pt-12 3xl:gap-4 3xl:pb-10 3xl:pt-8">
       <h3 className="text-4xl font-bold text-primary-tint-1 3xl:text-3xl 2xl:text-2xl xl:text-xl lg:text-lg">
         {title}
       </h3>
