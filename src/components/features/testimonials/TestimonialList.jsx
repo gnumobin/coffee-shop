@@ -8,8 +8,8 @@ const TestimonialList = () => {
       title="دسته بندی محصولات"
       data={data}
       RenderItem={TestimonialCard}
-      wrapperStyle={"pt-[var(--gap-section)]"}
-      minSize="28rem"
+      wrapperStyle={"pt-[var(--gap-section)] xl:pt-0"}
+      grid={"grid-cols-[repeat(auto-fit,minmax(25rem,1fr))]"}
     />
   );
 };

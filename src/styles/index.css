@@ -3,7 +3,7 @@
 /* Convert to first desktop approach */
 @custom-variant 2xl (@media (max-width: 57.5em));
 @custom-variant xl (@media (max-width: 41em));
-@custom-variant lg (@media (max-width: 64em));
+@custom-variant lg (@media (max-width: 28em));
 @custom-variant md (@media (max-width: 48em));
 @custom-variant sm (@media (max-width: 40em));
 
@@ -24,6 +24,7 @@
   --color-yellow: #ffcc32;
   --color-yellow-shade-1: #f9c06a;
   /* Text */
+  --text-lg: 1.2rem;
   --text-xl: 1.4rem;
   --text-2xl: 1.6rem;
   --text-3xl: 1.8rem;
@@ -61,8 +62,6 @@
 @utility heading-primary {
   font-size: 4rem;
   font-weight: bold;
-
-  /* text-shadow: 0 0 0.5rem white; */
 }
 
 @utility heading-secondary {
