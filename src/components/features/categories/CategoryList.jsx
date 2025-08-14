@@ -9,6 +9,7 @@ import data from "../../../data/categories/categories.json";
 import CategoryCard from "./CategoryCard";
 import GridWrapper from "../../ui/GridWrapper";
 
+// Images map
 const images = {
   sweets: sweetsImg,
   equipment: equipmentImg,
@@ -17,16 +18,16 @@ const images = {
   takeAway: takeAwayImg,
 };
 
-const CategoryList = () => {
-  return (
-    <GridWrapper
-      title="دسته بندی محصولات"
-      data={data}
-      images={images}
-      RenderItem={CategoryCard}
-      grid={"grid-cols-[repeat(auto-fit,minmax(14.5rem,1fr))]"}
-    />
-  );
-};
+const CategoryList = () => (
+  <GridWrapper
+    title="دسته بندی محصولات"
+    data={data}
+    images={images}
+    RenderItem={CategoryCard}
+    grid={
+      "grid-cols-[repeat(auto-fit,minmax(14.5rem,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(8rem,1fr))]"
+    }
+  />
+);
 
 export default CategoryList;

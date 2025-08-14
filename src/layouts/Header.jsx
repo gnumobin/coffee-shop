@@ -8,8 +8,8 @@ const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
 
   const navigationDefaultStyle = `mr-20 w-full flex ${
-    menuVisibility ? "translate-y-0" : "-translate-y-full"
-  } 2xl:flex-col 2xl:fixed left-0 top-0 2xl:bg-primary-shade-1 2xl:p-10 2xl:gap-y-10 duration-750 h-screen`;
+    menuVisibility ? "2xl:translate-y-0" : "2xl:-translate-y-[120%]"
+  } 2xl:flex-col 2xl:fixed left-0 top-0 2xl:bg-primary-shade-1 2xl:p-10 2xl:gap-y-10 duration-750 2xl:h-screen z-100`;
 
   return (
     <header className="text-2xl text-bright-shade-2 3xl:px-4 relative">

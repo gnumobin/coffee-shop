@@ -29,6 +29,12 @@ html {
   @media screen and (max-width: 57.5em) {
     font-size: 60%;
   }
+  @media screen and (max-width: 41em) {
+    font-size: 58%;
+  }
+  @media screen and (max-width: 28em) {
+    font-size: 56%;
+  }
 }
 
 body {

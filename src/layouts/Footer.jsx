@@ -10,33 +10,22 @@ import addressJson from "../data/footer/address.json";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer text-xl text-bright-shade-2 pt-32">
-      {/* <div className="container">
-        <div className="flex justify-between items-center">
-          <div>
-            <Logo />
-            <div className="flex gap-20">
-              <NavList data={addressJson} />
-              <NavList title="دسترسی سریع" data={contactAccessibilityJson} />
-              <NavList title="ارتباط با ما" data={contactListJson} />
-            </div>
-          </div>
-          <FeaturedIn />
-        </div>
-      </div> */}
+    <footer className="bg-footer pt-32 text-xl text-bright-shade-2 3xl:pt-20 2xl:pt-16 xl:pt-12 3xl:text-lg 2xl:text-base xl:text-sm">
       <div className="container">
-        <div className="flex gap-x-[14rem] gap-y-12 3xl:flex-col-reverse justify-between items-center">
+        <div className="flex items-center justify-between gap-x-[14rem] gap-y-12 3xl:flex-col-reverse 3xl:gap-y-20 2xl:gap-x-[8rem] xl:gap-x-[4rem]">
           <div className="3xl:w-full">
             <Logo />
-            <div className="flex xl:flex-col gap-5 3xl:justify-between">
+            <div className="flex gap-5 xl:flex-col xl:gap-4 3xl:justify-between">
               <NavList data={addressJson} />
               <NavList title="دسترسی سریع" data={contactAccessibilityJson} />
               <NavList title="ارتباط با ما" data={contactListJson} />
             </div>
           </div>
+
           <FeaturedIn />
         </div>
-        <p className="leading-12 my-12">
+
+        <p className="my-12 leading-12 3xl:my-10 2xl:my-8 3xl:leading-10 2xl:leading-9 xl:text-justify">
           کافینا گسترده ترین فروش قهوه و چای تخصصی در سراسر جهان. از دانه‌های
           اسپرسوی طعم‌دار، ما انواعی از محصولات را ارائه می‌دهیم تا کام هر مشتری
           را وسوسه کند. برای کسانی که به دنبال تجهیزات منحصر به فرد دم کردن

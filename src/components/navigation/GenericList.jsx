@@ -3,7 +3,7 @@ import Icon from "../ui/icons/Icon";
 const GenericList = ({ title, data }) => {
   return (
     <div className="p-10 pt-0 text-xl font-medium text-bright-shade-2">
-      <h2>{title}</h2>
+      <h2 className="text-2xl font-bold">{title}</h2>
       <ul className="list-disc flex flex-col gap-6 mt-12">
         {data.map((item, idx) => {
           // AddressList
