@@ -22,11 +22,13 @@ const PopularProductList = () => {
       data={data}
       images={images}
       RenderItem={ProductCard}
-      minSize="28rem"
+      grid={"best-seller-grid"}
       wrapperStyle="relative"
-      additionalStyle={"gap-y-36 mt-16"}
+      additionalStyle={"gap-y-36 2xl:gap-y-25 "}
     >
-      <div className="pos-center h-1/2 bg-secondary-tint-2 w-full">&nbsp;</div>
+      <div className="pos-center w-full h-1/2 bg-secondary-tint-2 xl:hidden">
+        &nbsp;
+      </div>
     </GridWrapper>
   );
 };

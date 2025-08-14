@@ -17,8 +17,8 @@ function App() {
       </div> */}
       <CategoryList />
       <BestSellerProductList />
+      <PopularProductList />
       {/* <Cta /> */}
-      {/* <PopularProductList /> */}
       {/* <TestimonialList /> */}
       {/* <Footer /> */}
     </div>

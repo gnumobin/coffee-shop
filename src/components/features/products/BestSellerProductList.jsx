@@ -22,9 +22,8 @@ const BestSellerProductList = () => {
       data={data}
       images={images}
       RenderItem={ProductCard}
-      // grid="grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]"
       grid={"best-seller-grid"}
-      additionalStyle={"gap-y-36 2xl:gap-y-25 mt-16"}
+      additionalStyle={"gap-y-36 2xl:gap-y-25"}
     />
   );
 };
