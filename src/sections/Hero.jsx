@@ -24,7 +24,7 @@ const Hero = () => {
             width={555}
             height={646}
             decoding="async"
-            className="w-[65%] xl:w-1/3"
+            className="w-[65%] xl:w-3/4"
             draggable="false"
           />
         </div>

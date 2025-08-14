@@ -11,7 +11,7 @@ import addressJson from "../data/footer/address.json";
 const Footer = () => {
   return (
     <footer className="bg-footer text-xl text-bright-shade-2 pt-32">
-      <div className="container">
+      {/* <div className="container">
         <div className="flex justify-between items-center">
           <div>
             <Logo />
@@ -30,6 +30,9 @@ const Footer = () => {
           هستند، همچنین طیف کاملی از اسپرسوسازهای با کیفیت، آسیاب، آبجو، پرس
           فرنچ و غیره. همه اینها به راحتی با کلیک یک دکمه در دسترس هستند!
         </p>
+        <EmailBox />
+      </div> */}
+      <div className="container">
         <EmailBox />
       </div>
       <CopyRight />
