@@ -24,6 +24,7 @@ const CategoryList = () => {
       data={data}
       images={images}
       RenderItem={CategoryCard}
+      grid={"categoryGrid"}
     />
   );
 };

@@ -4,15 +4,13 @@ const GridWrapper = (props) => {
     data,
     images,
     RenderItem,
-    minSize,
+    grid,
     additionalStyle,
     wrapperStyle,
     children,
   } = props;
 
-  const gridContainerStyle = `grid grid-cols-[repeat(auto-fit,minmax(${
-    minSize ? minSize : "22rem"
-  },1fr))] gap-8 rounded mt-16 ${additionalStyle}`;
+  const gridContainerStyle = `grid ${grid} gap-8 rounded mt-16 ${additionalStyle}`;
 
   return (
     <section className={wrapperStyle}>

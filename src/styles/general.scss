@@ -25,6 +25,10 @@ $iransansx-fonts: (
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 57.5em) {
+    font-size: 60%;
+  }
 }
 
 body {

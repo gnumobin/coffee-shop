@@ -11,16 +11,16 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <div className="flex flex-col gap-section">
-      <div className="gradient-brown">
+      {/* <div className="gradient-brown">
         <Header />
         <Hero />
-      </div>
+      </div> */}
       <CategoryList />
-      <BestSellerProductList />
+      {/* <BestSellerProductList />
       <Cta />
       <PopularProductList />
       <TestimonialList />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
