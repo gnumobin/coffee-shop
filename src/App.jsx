@@ -16,11 +16,11 @@ function App() {
         <Hero />
       </div> */}
       <CategoryList />
-      {/* <BestSellerProductList />
-      <Cta />
-      <PopularProductList />
-      <TestimonialList />
-      <Footer /> */}
+      <BestSellerProductList />
+      {/* <Cta /> */}
+      {/* <PopularProductList /> */}
+      {/* <TestimonialList /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

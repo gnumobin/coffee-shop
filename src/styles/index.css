@@ -95,6 +95,9 @@
   background-repeat: no-repeat;
 }
 
-@utility categoryGrid {
-  grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+@utility best-seller-grid {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(15rem, 17vw, 24rem), 1fr)
+  );
 }
