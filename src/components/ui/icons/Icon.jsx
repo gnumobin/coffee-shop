@@ -1,12 +1,14 @@
 import {
   LuLocateFixed,
   LuMail,
+  LuMenu,
   LuPhone,
   LuSearch,
   LuShoppingCart,
   LuUserRound,
 } from "react-icons/lu";
 import {
+  RiCloseLine,
   RiFacebookFill,
   RiGithubLine,
   RiLinkedinBoxFill,
@@ -97,6 +99,22 @@ const Icon = ({ icon, link, className }) => {
         </a>
       ) : (
         <LuShoppingCart className={generalStyle} />
+      );
+    case "menu":
+      return link ? (
+        <a href={link}>
+          <LuMenu className={generalStyle} />
+        </a>
+      ) : (
+        <LuMenu className={generalStyle} />
+      );
+    case "close":
+      return link ? (
+        <a href={link}>
+          <RiCloseLine className={generalStyle} />
+        </a>
+      ) : (
+        <RiCloseLine className={generalStyle} />
       );
 
     default:

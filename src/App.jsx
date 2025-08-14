@@ -11,11 +11,8 @@ import Hero from "./sections/Hero";
 function App() {
   return (
     <div className="flex flex-col gap-section">
-      {/* <div className="gradient-brown">
-        <Header />
-      <Hero />
-        </div> */}
       <div className="gradient-brown h-screen">
+        <Header />
         <Hero />
       </div>
       <CategoryList />
