@@ -24,6 +24,7 @@ const FeaturedIn = () => {
         decoding="async"
         width={222}
         height={222}
+        className=""
       />
       <div className="flex gap-8 mt-8">
         {data.map((featured) => (

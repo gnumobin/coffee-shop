@@ -15,14 +15,14 @@ function App() {
         <Header />
       <Hero />
         </div> */}
-      {/* <div className="gradient-brown h-screen">
+      <div className="gradient-brown h-screen">
         <Hero />
-      </div> */}
-      {/* <CategoryList />
+      </div>
+      <CategoryList />
       <BestSellerProductList />
       <Cta />
       <PopularProductList />
-      <TestimonialList /> */}
+      <TestimonialList />
       <Footer />
     </div>
   );

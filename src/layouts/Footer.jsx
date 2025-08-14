@@ -23,6 +23,19 @@ const Footer = () => {
           </div>
           <FeaturedIn />
         </div>
+      </div> */}
+      <div className="container">
+        <div className="flex gap-x-[14rem] gap-y-12 3xl:flex-col-reverse justify-between items-center">
+          <div className="3xl:w-full">
+            <Logo />
+            <div className="flex xl:flex-col gap-5 3xl:justify-between">
+              <NavList data={addressJson} />
+              <NavList title="دسترسی سریع" data={contactAccessibilityJson} />
+              <NavList title="ارتباط با ما" data={contactListJson} />
+            </div>
+          </div>
+          <FeaturedIn />
+        </div>
         <p className="leading-12 my-12">
           کافینا گسترده ترین فروش قهوه و چای تخصصی در سراسر جهان. از دانه‌های
           اسپرسوی طعم‌دار، ما انواعی از محصولات را ارائه می‌دهیم تا کام هر مشتری
@@ -30,9 +43,6 @@ const Footer = () => {
           هستند، همچنین طیف کاملی از اسپرسوسازهای با کیفیت، آسیاب، آبجو، پرس
           فرنچ و غیره. همه اینها به راحتی با کلیک یک دکمه در دسترس هستند!
         </p>
-        <EmailBox />
-      </div> */}
-      <div className="container">
         <EmailBox />
       </div>
       <CopyRight />
