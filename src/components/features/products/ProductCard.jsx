@@ -26,7 +26,7 @@ const ProductCard = ({ title, img, alt, recipe, price }) => {
         <p className="text-2xl font-bold text-primary-tint-1">
           <i>{price.toLocaleString()}</i> تومان
         </p>
-        <Button className="pos-center">سفارش</Button>
+        <Button className="pos-center 2xl:-translate-y-1/2">سفارش</Button>
       </figcaption>
     </figure>
   );

@@ -10,13 +10,16 @@ const Cta = () => {
           <h2 className="heading-secondary 2xl:text-4xl xl:!text-3xl text-inherit">
             انواع قهوه فوری
           </h2>
-          <p className="mt-6 mb-10 text-2xl 2xl:text-xl xl:!text-lg leading-12">
+          <p className="mt-6 2xl:mt-3 mb-10 2xl:mb-5 text-2xl 2xl:text-xl xl:!text-lg leading-12">
             انواع قهوه فوری کلاسیک، کافی میکس، کافی میت، کاپوچینو، لاته،
             موکاچینو، هات چاکلت و نسکافه گلد
           </p>
-          {/* <Button primary={false} className="mt-20">
+          <Button
+            primary={false}
+            className="mt-20 xl:mt-0 2xl:!text-lg xl:!text-xl"
+          >
             همین حالا خرید کن
-          </Button> */}
+          </Button>
         </div>
         {/* Image */}
         <img

@@ -24,6 +24,7 @@
   --color-yellow: #ffcc32;
   --color-yellow-shade-1: #f9c06a;
   /* Text */
+  --text-xs: 1rem;
   --text-lg: 1.2rem;
   --text-xl: 1.4rem;
   --text-2xl: 1.6rem;
