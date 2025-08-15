@@ -2,7 +2,7 @@ import Button from "../../ui/buttons/Button";
 
 const ProductCard = ({ title, img, alt, recipe, price }) => {
   return (
-    <figure className="bg-bright text-center rounded-2xl rounded-t-3xl border border-yellow-shade-1 relative">
+    <figure className="bg-bright text-center rounded-2xl rounded-t-3xl border border-yellow-shade-1 relative hover:border-white duration-250 hover:-translate-y-4 hover:shadow-lg">
       <img
         src={img}
         alt={alt}

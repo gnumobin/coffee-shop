@@ -47,3 +47,32 @@ cite,
 address {
   font-style: normal;
 }
+
+// 🔧 Utility Classes
+.jelly {
+  transition: all 0.3s ease;
+  will-change: transform;
+
+  &:hover {
+    animation: jelly 0.6s ease-in-out;
+  }
+}
+
+// 🔁 Jelly Keyframes
+@keyframes jelly {
+  0% {
+    transform: translateY(0) scale(1) rotate(0);
+  }
+  25% {
+    transform: translateY(-8px) scale(1.05) rotate(5deg);
+  }
+  50% {
+    transform: translateY(4px) scale(0.95) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-3px) scale(1.02) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0);
+  }
+}

@@ -27,7 +27,7 @@ const Header = () => {
               {primaryNav.map((item, i) => (
                 <li
                   key={i}
-                  className="2xl:bg-primary-tint-1 2xl:p-8 2xl:rounded-2xl"
+                  className="2xl:bg-primary-tint-1 2xl:p-8 2xl:rounded-2xl hover:text-white duration-250 hover:scale-105"
                 >
                   <a href={item.link}>{item.title}</a>
                 </li>
