@@ -25,7 +25,7 @@ const CategoryList = () => (
     images={images}
     RenderItem={CategoryCard}
     grid={
-      "grid-cols-[repeat(auto-fit,minmax(14.5rem,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] xl:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(8rem,1fr))]"
+      "grid-cols-[repeat(auto-fit,minmax(14.5rem,1fr))] 2xl:grid-cols-[repeat(auto-fit,minmax(12rem,1fr))]"
     }
   />
 );

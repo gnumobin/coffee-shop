@@ -1,3 +1,4 @@
+import { CgMenuRight } from "react-icons/cg";
 import {
   LuLocateFixed,
   LuMail,
@@ -103,10 +104,10 @@ const Icon = ({ icon, link, className }) => {
     case "menu":
       return link ? (
         <a href={link}>
-          <LuMenu className={generalStyle} />
+          <CgMenuRight className={generalStyle} />
         </a>
       ) : (
-        <LuMenu className={generalStyle} />
+        <CgMenuRight className={generalStyle} />
       );
     case "close":
       return link ? (

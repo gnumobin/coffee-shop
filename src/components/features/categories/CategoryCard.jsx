@@ -16,10 +16,7 @@ const CategoryCard = ({ title, img, alt }) => {
         height={107}
         loading="lazy"
         decoding="async"
-        className="w-full max-w-[107px]
-                   2xl:w-2/3
-                   xl:w-1/2
-                   lg:w-2/5"
+        className="w-full xl:w-2/3"
         role="presentation"
       />
       <figcaption className="mt-6 lg:mt-4">{title}</figcaption>

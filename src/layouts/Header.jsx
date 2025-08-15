@@ -16,12 +16,12 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between py-12">
           <button onClick={() => setMenuVisibility((prev) => !prev)}>
-            <Icon icon={"menu"} className={"hidden w-24 h-24 2xl:block"} />
+            <Icon icon={"menu"} className={"hidden w-20 h-20 2xl:block"} />
           </button>
           <Logo />
           <nav className={navigationDefaultStyle}>
             <button onClick={() => setMenuVisibility((prev) => !prev)}>
-              <Icon icon={"close"} className={"hidden w-24 h-24 2xl:block"} />
+              <Icon icon={"close"} className={"hidden w-20 h-20 2xl:block"} />
             </button>
             <ul className="flex 2xl:flex-col gap-16 2xl:gap-8">
               {primaryNav.map((item, i) => (

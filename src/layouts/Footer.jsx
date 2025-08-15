@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-footer pt-32 text-xl text-bright-shade-2 3xl:pt-20 2xl:pt-16 xl:pt-12 3xl:text-lg 2xl:text-base xl:text-sm">
       <div className="container">
-        <div className="flex items-center justify-between gap-x-[14rem] gap-y-12 3xl:flex-col-reverse 3xl:gap-y-20 2xl:gap-x-[8rem] xl:gap-x-[4rem]">
+        <div className="flex items-center justify-between gap-x-[14rem] gap-y-12 3xl:flex-col 3xl:gap-y-20 2xl:gap-x-[8rem] xl:gap-x-[4rem]">
           <div className="3xl:w-full">
             <Logo />
             <div className="flex gap-5 xl:flex-col xl:gap-4 3xl:justify-between">
